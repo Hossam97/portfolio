@@ -5,7 +5,7 @@ import { FaLocationArrow } from "react-icons/fa6";
 
 const Projects = () => {
   return (
-    <div className="py-20">
+    <div id="projects" className="py-20">
       <div className="flex items-center justify-center text-2xl md:text-4xl">
         <h1 className="heading">
           A list of some of my{" "}
