@@ -3,8 +3,7 @@
 import { cn } from "../../lib/utils";
 import { BackgroundGradientAnimation } from "./BackgroundGradientAnimation";
 import { GlobeDemo } from "./GridGlobe";
-import { useEffect, useState } from "react";
-import animationData from "../../data/confetti.json";
+import { useState } from "react";
 import MagicButton from "./MagicButton";
 import { IoCopyOutline } from "react-icons/io5";
 import Confetti  from "react-confetti";
@@ -57,14 +56,6 @@ export const BentoGridItem = ({
   const techStack = {
     left: ["Nodejs", "Django", "MongoDB"],
     right: ["React.js", "Next.js", "Typescript"],
-  };
-  const defaultOptions = {
-    loop: copied,
-    autoplay: copied,
-    animationData: animationData,
-    rendererSettings: {
-      preserveAspectRatio: "xMidYMid slice",
-    },
   };
   const handleCopy = async() => {
     navigator.clipboard.writeText("hossammohamed.ib@gmail.com");

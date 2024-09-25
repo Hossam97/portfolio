@@ -5,6 +5,7 @@ import IntroHeaders from "@/components/IntroHeaders";
 import { FloatingNav } from "@/components/ui/FloatingNavBar";
 import { FaHome } from "react-icons/fa";
 import Grid from "@/components/Grid";
+import Projects from "../components/Projects";
 
 export default function Home() {
   const navBarSections = [
@@ -16,6 +17,7 @@ export default function Home() {
         <FloatingNav navItems={navBarSections}/>
         <Intro />
         <Grid />   
+        <Projects />
       </div>
     </main>
   );
