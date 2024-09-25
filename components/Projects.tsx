@@ -4,6 +4,7 @@ import { projects } from "@/data";
 import { FaLocationArrow } from "react-icons/fa6";
 
 const Projects = () => {
+  // TODO: build an API for the projects data
   return (
     <div id="projects" className="py-20">
       <div className="flex items-center justify-center text-2xl md:text-4xl">
