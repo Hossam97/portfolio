@@ -57,16 +57,16 @@ export const navItems = [
       img: "/b5.svg",
       spareImg: "/grid.svg",
     },
-    {
-      id: 6,
-      title: "Do you want to start a project together?",
-      description: "",
-      className: "lg:col-span-3 md:col-span-6 md:row-span-1",
-      imgClassName: "",
-      titleClassName: "justify-center md:max-w-full max-w-60 text-center",
-      img: "",
-      spareImg: "",
-    },
+    // {
+    //   id: 6,
+    //   title: "Do you want to start a project together?",
+    //   description: "",
+    //   className: "lg:col-span-3 md:col-span-6 md:row-span-1",
+    //   imgClassName: "",
+    //   titleClassName: "justify-center md:max-w-full max-w-60 text-center",
+    //   img: "",
+    //   spareImg: "",
+    // },
   ];
   
   export const projects = [
@@ -175,13 +175,13 @@ export const navItems = [
     {
       id: 1,
       img: "/git.svg",
+      name: "github",
+      link: "https://github.com/Hossam97/"
     },
     {
       id: 2,
-      img: "/twit.svg",
-    },
-    {
-      id: 3,
       img: "/link.svg",
+      name: "linkedin",
+      link: "https://www.linkedin.com/in/hossam97/"
     },
   ];

@@ -50,22 +50,13 @@ export const BentoGridItem = ({
   titleClassName?: string;
   spareImg?: string;
 }) => {
-  const [copied, setCopied] = useState(false);
-  const [isConfettiOpen, setIsConfettiOpen] = useState(false);
+  
 
   const techStack = {
     left: ["Nodejs", "Django", "MongoDB"],
     right: ["React.js", "Next.js", "Typescript"],
   };
-  const handleCopy = async() => {
-    navigator.clipboard.writeText("hossammohamed.ib@gmail.com");
-    setCopied(true);
-    setIsConfettiOpen(true);
-    setTimeout(() => {
-      setCopied(false);
-      setIsConfettiOpen(false);
-    }, 3000)
-  };
+  
 
   return (
     <div
@@ -150,7 +141,7 @@ export const BentoGridItem = ({
             </div>
           )}
 
-          {id === 6 && (
+          {/* {id === 6 && (
             <div className="mt-5 relative w-full">
               <div className={`absolute md:bottom-25`}>
                 {isConfettiOpen && <Confetti confettiSource={{x: 50, y: -200, w: 300, h: 400}} numberOfPieces={300} initialVelocityY={10} recycle={false} height={200} width={400} />}
@@ -163,7 +154,7 @@ export const BentoGridItem = ({
                 otherClasses="!bg-[#161A31]"
               />
             </div>
-          )}
+          )} */}
         </div>
       </div>
     </div>

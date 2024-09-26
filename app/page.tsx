@@ -5,6 +5,7 @@ import Projects from "../components/Projects";
 import { navItems } from "@/data";
 import Journey from '@/components/Journey';
 import NavMenu from '@/components/ui/NavMenu'
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
         <Grid />   
         <Projects />
         <Journey />
+        <Footer />
       </div>
     </main>
   );
