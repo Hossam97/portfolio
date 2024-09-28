@@ -21,7 +21,7 @@ const Intro = () => {
 
       <BackgroundGrid />
       <IntroHeaders />
-      <MagicButton title="Show my work" />
+      <MagicButton title="Show my work" href="#projects" />
     </div>
   );
 };

@@ -12,7 +12,7 @@ const IntroHeaders = () => {
           words="Turning Concepts into Scalable, High-Performance Applications"
           className="text-center"
         />
-        <p className="text-center mt-3 md:tracking-wider text-sm md:text-lg">Hi, I&apos;m Hossam, a full-stack developer based in Qatar 🇶🇦</p>
+        <p className="text-center mt-3 md:tracking-wider text-sm md:text-lg">Hi, I&apos;m Hossam, a software developer based in Qatar 🇶🇦</p>
       </div>
     </div>
   );
