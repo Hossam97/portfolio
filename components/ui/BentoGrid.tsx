@@ -140,21 +140,6 @@ export const BentoGridItem = ({
               </div>
             </div>
           )}
-
-          {/* {id === 6 && (
-            <div className="mt-5 relative w-full">
-              <div className={`absolute md:bottom-25`}>
-                {isConfettiOpen && <Confetti confettiSource={{x: 50, y: -200, w: 300, h: 400}} numberOfPieces={300} initialVelocityY={10} recycle={false} height={200} width={400} />}
-              </div>
-              <MagicButton
-                title={copied ? "Email copied" : "Copy my email"}
-                icon={<IoCopyOutline />}
-                position="left"
-                handleClick={handleCopy}
-                otherClasses="!bg-[#161A31]"
-              />
-            </div>
-          )} */}
         </div>
       </div>
     </div>
