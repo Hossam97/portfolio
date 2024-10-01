@@ -9,6 +9,12 @@ export default withSentryConfig(nextConfig, {
 org: "hossam-metawaa",
 project: "portfolio",
 
+// Sentry Auth token
+sentry: {
+    authToken: process.env.NEXT_PUBLIC_SENTRY_AUTH_TOKEN,
+    // ... other Sentry options
+  },
+
 // Only print logs for uploading source maps in CI
 silent: !process.env.CI,
 
