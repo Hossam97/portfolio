@@ -30,7 +30,7 @@ export function Resume() {
       <MagicButton
         title={resume.length > 0 ? "Download" : "Resume is loading"}
         icon={resume.length > 0 ? <FaFileDownload /> : <SyncLoader size={10} color="#ffffff" />}
-        href={`http://127.0.0.1:8000${resume}`}
+        href={`${process.env.NEXT_PUBLIC_BASE_API_URL}/${resume}`}
         position="left"
         disabled={!(resume.length > 0)}
         otherClasses="text-center text-neutral-300 w-full"
