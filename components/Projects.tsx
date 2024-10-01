@@ -22,12 +22,13 @@ const Projects = () => {
     techStack: Technology[];
   }
   const [projects, setProjects] = useState<Project[]>([]);
+
   useEffect(() => {
+    console.log(process.env)
     const getProjects = async () => {
       await axiosInstance
-        .get("projects/")
+        .get("/projects/")
         .then((res) => {
-          console.log(res);
           setProjects(res.data);
         })
         .catch((err) => console.log(err));
@@ -59,7 +60,7 @@ const Projects = () => {
                   </div>
                   {img ? (
                     <img
-                      src={`http://127.0.0.1:8000/${img}`}
+                      src={`${process.env.NEXT_PUBLIC_BASE_API_URL}/${img}`}
                       alt="cover"
                       className="absolute h-full w-full"
                     />
@@ -96,7 +97,7 @@ const Projects = () => {
                       >
                         {
                           <img
-                            src={`http://127.0.0.1:8000${icon}`}
+                            src={`${process.env.NEXT_PUBLIC_BASE_API_URL}/${icon}`}
                             alt={`${name} icon`}
                             className="p-2"
                           />
