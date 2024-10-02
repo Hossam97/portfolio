@@ -2,7 +2,8 @@ import {withSentryConfig} from '@sentry/nextjs';
 /** @type {import('next').NextConfig} */
 const nextConfig = {};
 
-export default withSentryConfig(nextConfig, {
+
+export default withSentryConfig(nextConfig, {authToken: process.env.SENTRY_AUTH_TOKEN}, {
 // For all available options, see:
 // https://github.com/getsentry/sentry-webpack-plugin#options
 
