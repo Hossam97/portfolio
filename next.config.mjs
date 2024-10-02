@@ -2,18 +2,13 @@ import {withSentryConfig} from '@sentry/nextjs';
 /** @type {import('next').NextConfig} */
 const nextConfig = {};
 
-export default withSentryConfig(nextConfig, {
+
+export default withSentryConfig(nextConfig, {authToken: process.env.SENTRY_AUTH_TOKEN}, {
 // For all available options, see:
 // https://github.com/getsentry/sentry-webpack-plugin#options
 
 org: "hossam-metawaa",
 project: "portfolio",
-
-// Sentry Auth token
-sentry: {
-    authToken: process.env.NEXT_PUBLIC_SENTRY_AUTH_TOKEN,
-    // ... other Sentry options
-  },
 
 // Only print logs for uploading source maps in CI
 silent: !process.env.CI,
