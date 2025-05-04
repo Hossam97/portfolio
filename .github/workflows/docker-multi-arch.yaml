@@ -26,6 +26,9 @@ jobs:
     - name: Log in to Amazon ECR
       id: login-ecr
       uses: aws-actions/amazon-ecr-login@v1
+    
+    - name: Confirm AWS Identity
+      run: aws sts get-caller-identity
 
     - name: Build and Push to ECR
       uses: docker/build-push-action@v5
