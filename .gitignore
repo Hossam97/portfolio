@@ -40,3 +40,25 @@ next-env.d.ts
 
 # Sentry Config File
 .env.sentry-build-plugin
+
+# Local .terraform directories (Terraform state plugins and providers)
+.terraform/
+
+# Terraform plan files (may contain sensitive output data)
+*.tfplan
+
+# Terraform state files (may contain secrets)
+*.tfstate
+*.tfstate.backup
+
+# Crash logs
+crash.log
+
+# Override files (used for local changes)
+terraform.tfvars
+terraform.tfvars.json
+
+# Sensitive files
+*.pem
+*.key
+*.env
